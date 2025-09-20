@@ -1,0 +1,59 @@
+{
+  "output_dir": "alphafold3_work/output_h200/seq1_only/seq1_precrrna_20250918_181843",
+  "summary_file": "seq1_precrrna_20250918_181843_summary_confidences.json",
+  "confidence_file": "seq1_precrrna_20250918_181843_confidences.json",
+  "ptm": 0.9,
+  "iptm": 0.89,
+  "ranking_score": 0.89,
+  "global_plddt": 84.19446640316205,
+  "chain_ptm": [
+    0.9,
+    0.43
+  ],
+  "chain_iptm": [
+    0.89,
+    0.89
+  ],
+  "chain_pair_iptm": [
+    [
+      0.9,
+      0.89
+    ],
+    [
+      0.89,
+      0.43
+    ]
+  ],
+  "chain_pair_pae_min": [
+    [
+      0.76,
+      1.07
+    ],
+    [
+      1.04,
+      0.78
+    ]
+  ],
+  "chain_stats": {
+    "A": {
+      "avg_plddt": 87.35504527559056,
+      "median_plddt": 90.94,
+      "q10_plddt": 72.41,
+      "q90_plddt": 96.52,
+      "min_plddt": 27.86,
+      "max_plddt": 98.61,
+      "atoms": 10160,
+      "residues": 1228
+    },
+    "R": {
+      "avg_plddt": 57.98101224489796,
+      "median_plddt": 53.33,
+      "q10_plddt": 21.567999999999998,
+      "q90_plddt": 92.818,
+      "min_plddt": 9.21,
+      "max_plddt": 95.53,
+      "atoms": 1225,
+      "residues": 58
+    }
+  }
+}

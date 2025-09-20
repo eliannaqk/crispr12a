@@ -1,0 +1,37 @@
+{
+  "output_dir": "/home/eqk3/crispr12/opencrispr-repro-main/alphafold3_work/output_h200/seq1_only/seq1_only_20250918_134932",
+  "summary_file": "seq1_only_20250918_134932_summary_confidences.json",
+  "confidence_file": "seq1_only_20250918_134932_confidences.json",
+  "ptm": 0.2,
+  "iptm": null,
+  "ranking_score": 0.32,
+  "global_plddt": 31.854614173228345,
+  "chain_ptm": [
+    0.2
+  ],
+  "chain_iptm": [
+    null
+  ],
+  "chain_pair_iptm": [
+    [
+      0.2
+    ]
+  ],
+  "chain_pair_pae_min": [
+    [
+      0.76
+    ]
+  ],
+  "chain_stats": {
+    "A": {
+      "avg_plddt": 31.854614173228345,
+      "median_plddt": 29.41,
+      "q10_plddt": 20.239,
+      "q90_plddt": 45.60200000000001,
+      "min_plddt": 12.51,
+      "max_plddt": 83.34,
+      "atoms": 10160,
+      "residues": 1228
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "output_dir": "/home/eqk3/crispr12/opencrispr-repro-main/alphafold3_work/output_h200/seed4_complex/seed4_complex_20250916_231119",
+  "summary_file": "seed4_complex_summary_confidences.json",
+  "confidence_file": "seed4_complex_confidences.json",
+  "ptm": 0.23,
+  "iptm": 0.23,
+  "ranking_score": 0.23,
+  "global_plddt": 31.14587596644185,
+  "chain_ptm": [
+    0.23,
+    0.3,
+    0.11,
+    0.01
+  ],
+  "chain_iptm": [
+    0.21,
+    0.11,
+    0.17,
+    0.17
+  ],
+  "chain_pair_iptm": [
+    [
+      0.23,
+      0.27,
+      0.17,
+      0.19
+    ],
+    [
+      0.27,
+      0.3,
+      0.03,
+      0.03
+    ],
+    [
+      0.17,
+      0.03,
+      0.11,
+      0.29
+    ],
+    [
+      0.19,
+      0.03,
+      0.29,
+      0.01
+    ]
+  ],
+  "chain_pair_pae_min": [
+    [
+      0.76,
+      17.44,
+      25.36,
+      25.59
+    ],
+    [
+      15.37,
+      0.81,
+      22.06,
+      22.73
+    ],
+    [
+      23.75,
+      23.45,
+      0.83,
+      3.11
+    ],
+    [
+      26.24,
+      23.84,
+      2.83,
+      0.83
+    ]
+  ],
+  "chain_stats": {
+    "A": {
+      "avg_plddt": 33.488979330708666,
+      "median_plddt": 30.98,
+      "q10_plddt": 22.08,
+      "q90_plddt": 48.09100000000001,
+      "min_plddt": 14.08,
+      "max_plddt": 81.38,
+      "atoms": 10160,
+      "residues": 1228
+    },
+    "B": {
+      "avg_plddt": 20.94284081632653,
+      "median_plddt": 19.77,
+      "q10_plddt": 16.124,
+      "q90_plddt": 26.956000000000003,
+      "min_plddt": 11.85,
+      "max_plddt": 29.6,
+      "atoms": 1225,
+      "residues": 58
+    },
+    "C": {
+      "avg_plddt": 15.84010889292196,
+      "median_plddt": 15.24,
+      "q10_plddt": 13.64,
+      "q90_plddt": 18.89,
+      "min_plddt": 12.96,
+      "max_plddt": 24.23,
+      "atoms": 551,
+      "residues": 27
+    },
+    "D": {
+      "avg_plddt": 18.201126126126127,
+      "median_plddt": 17.73,
+      "q10_plddt": 15.214,
+      "q90_plddt": 22.265,
+      "min_plddt": 14.38,
+      "max_plddt": 25.7,
+      "atoms": 222,
+      "residues": 11
+    }
+  }
+}

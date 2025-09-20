@@ -1,0 +1,10 @@
+{
+  "output_dir": "/home/eqk3/crispr12/opencrispr-repro-main/alphafold3_work/output_h200/seq1_only/seq1_only_20250918_142431/seq1_only_20250918_142431",
+  "summary_confidences": "seq1_only_20250918_142431_summary_confidences.json",
+  "confidences": "seq1_only_20250918_142431_confidences.json",
+  "model_cif": "seq1_only_20250918_142431_model.cif",
+  "ptm": 0.92,
+  "iptm": null,
+  "ranking_score": 0.92,
+  "global_plddt": 90.91895472440945
+}

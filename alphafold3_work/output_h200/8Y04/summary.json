@@ -1,0 +1,17 @@
+{
+  "output_dir": "/home/eqk3/crispr12/opencrispr-repro-main/alphafold3_work/output_h200/8Y04/8Y04",
+  "summary_confidences": "8Y04_summary_confidences.json",
+  "confidences": "8Y04_confidences.json",
+  "model_cif": "8Y04_model.cif",
+  "ptm": 0.81,
+  "iptm": 0.88,
+  "ranking_score": 0.87,
+  "global_plddt": 82.7592487001733,
+  "tmalign": {
+    "tm_scores": [
+      0.95081,
+      0.97094
+    ],
+    "rmsd": 2.03
+  }
+}

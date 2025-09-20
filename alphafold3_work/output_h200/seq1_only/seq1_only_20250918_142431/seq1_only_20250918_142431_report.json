@@ -1,0 +1,37 @@
+{
+  "output_dir": "alphafold3_work/output_h200/seq1_only/seq1_only_20250918_142431",
+  "summary_file": "seq1_only_20250918_142431_summary_confidences.json",
+  "confidence_file": "seq1_only_20250918_142431_confidences.json",
+  "ptm": 0.92,
+  "iptm": null,
+  "ranking_score": 0.92,
+  "global_plddt": 90.91895472440945,
+  "chain_ptm": [
+    0.92
+  ],
+  "chain_iptm": [
+    null
+  ],
+  "chain_pair_iptm": [
+    [
+      0.92
+    ]
+  ],
+  "chain_pair_pae_min": [
+    [
+      0.76
+    ]
+  ],
+  "chain_stats": {
+    "A": {
+      "avg_plddt": 90.91895472440945,
+      "median_plddt": 94.8,
+      "q10_plddt": 77.789,
+      "q90_plddt": 97.97,
+      "min_plddt": 32.32,
+      "max_plddt": 98.84,
+      "atoms": 10160,
+      "residues": 1228
+    }
+  }
+}

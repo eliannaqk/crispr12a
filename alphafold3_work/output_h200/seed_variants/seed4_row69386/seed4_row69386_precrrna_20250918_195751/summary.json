@@ -1,0 +1,10 @@
+{
+  "output_dir": "/home/eqk3/crispr12/opencrispr-repro-main/alphafold3_work/output_h200/seed_variants/seed4_row69386/seed4_row69386_precrrna_20250918_195751/seed4_row69386_precrrna_20250918_195751",
+  "summary_confidences": "seed4_row69386_precrrna_20250918_195751_summary_confidences.json",
+  "confidences": "seed4_row69386_precrrna_20250918_195751_confidences.json",
+  "model_cif": "seed4_row69386_precrrna_20250918_195751_model.cif",
+  "ptm": 0.9,
+  "iptm": 0.89,
+  "ranking_score": 0.89,
+  "global_plddt": 84.0502887484641
+}

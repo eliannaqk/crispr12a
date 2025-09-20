@@ -1,0 +1,17 @@
+{
+  "output_dir": "/home/eqk3/crispr12/opencrispr-repro-main/alphafold3_work/output_h200/seed2_complex/seed2_complex",
+  "summary_confidences": "seed2_complex_summary_confidences.json",
+  "confidences": "seed2_complex_confidences.json",
+  "model_cif": "seed2_complex_model.cif",
+  "ptm": 0.8,
+  "iptm": 0.87,
+  "ranking_score": 0.86,
+  "global_plddt": 80.63065501066099,
+  "tmalign": {
+    "tm_scores": [
+      0.89599,
+      0.92947
+    ],
+    "rmsd": 3.49
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "output_dir": "alphafold3_work/output_h200/final_precrrna/seed2_row41217_precrrna_final",
+  "summary_file": "seed2_row41217_precrrna_final_summary_confidences.json",
+  "confidence_file": "seed2_row41217_precrrna_final_confidences.json",
+  "ptm": 0.86,
+  "iptm": 0.84,
+  "ranking_score": 0.85,
+  "global_plddt": 79.44670007844505,
+  "chain_ptm": [
+    0.86,
+    0.41
+  ],
+  "chain_iptm": [
+    0.84,
+    0.84
+  ],
+  "chain_pair_iptm": [
+    [
+      0.86,
+      0.84
+    ],
+    [
+      0.84,
+      0.41
+    ]
+  ],
+  "chain_pair_pae_min": [
+    [
+      0.76,
+      1.21
+    ],
+    [
+      1.13,
+      0.78
+    ]
+  ],
+  "chain_stats": {
+    "A": {
+      "avg_plddt": 82.51677595628416,
+      "median_plddt": 86.34,
+      "q10_plddt": 65.26,
+      "q90_plddt": 94.34,
+      "min_plddt": 22.48,
+      "max_plddt": 97.94,
+      "atoms": 10248,
+      "residues": 1236
+    },
+    "R": {
+      "avg_plddt": 53.7633224489796,
+      "median_plddt": 46.21,
+      "q10_plddt": 18.872,
+      "q90_plddt": 89.87,
+      "min_plddt": 6.4,
+      "max_plddt": 92.66,
+      "atoms": 1225,
+      "residues": 58
+    }
+  }
+}
