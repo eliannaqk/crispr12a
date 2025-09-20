@@ -1,0 +1,2 @@
+seed,sequence_id,score_dr_logit,rank_dr_logit,score_original,rank_within_seed,plddt,ppl,dr_prob,dr_logit,pam_prob,pam_logit,z_plddt,z_negppl,ptm,iptm,tm_rank,global_plddt_summary,WED,PI,NUC,BH,LID
+seed4,seed4_row68629,1.158319322087196,31.0,1.3309434197956664,8.0,67.0696009771987,19.168116,0.307173,-0.813371,0.628287,0.524875,0.413467629982027,1.5817384172930984,,,,,True,True,True,True,False

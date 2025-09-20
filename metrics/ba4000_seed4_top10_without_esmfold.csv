@@ -1,0 +1,11 @@
+seed,sequence_id,score,plddt,ppl,dr_prob,pam_prob,dr_logit,pam_logit,overall_pass,WED_pass,PI_pass,NUC_pass,BH_pass,LID_pass
+seed4,seed4_row102628,1.3594376300502231,,19.330805,0.554683,0.636099,0.219612,0.55847,True,True,True,True,True,False
+seed4,seed4_row75100,1.352773403998597,,19.081968,0.294643,0.630943,-0.87294,0.536265,True,True,True,True,True,False
+seed4,seed4_row107447,1.3491182937001542,,19.047228,0.247502,0.632855,-1.111981,0.544483,False,False,False,False,False,False
+seed4,seed4_row113564,1.3441903091211735,,19.206643,0.374161,0.650071,-0.514408,0.619353,False,False,False,False,False,False
+seed4,seed4_row112808,1.3435503059483036,,19.160284,0.321405,0.658583,-0.747321,0.656984,False,False,False,False,False,False
+seed4,seed4_row115608,1.3406258868260863,,19.059307,0.227286,0.638284,-1.223702,0.567922,False,False,False,False,False,False
+seed4,seed4_row110644,1.333119708610086,,19.290796,0.416664,0.653351,-0.336483,0.633802,True,True,True,True,True,False
+seed4,seed4_row68629,1.3309434197956664,,19.168116,0.307173,0.628287,-0.813371,0.524875,True,True,True,True,True,False
+seed4,seed4_row112064,1.3289835817455893,,19.110451,0.234291,0.643946,-1.184236,0.592533,True,True,True,True,True,False
+seed4,seed4_row68353,1.3289759600669695,,19.205192,0.325557,0.644795,-0.728348,0.596239,True,True,True,True,True,False

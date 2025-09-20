@@ -1,0 +1,65 @@
+# cas12a_motifs_lb_hmm.yaml
+#
+# HMMER-based motif filter aligned to *LbCas12a*. Motif coordinates are in Lb numbering
+# (ND2006-like). They are mapped to HMM match-state indices automatically by aligning the
+# *anchor* to the HMM; each query is then hmmaligned to the same HMM to read residues.
+#
+# Provide the anchor either inline here (anchor.seq) OR via --anchor_fasta/--anchor_id_substring.
+
+anchor:
+  # Option A: inline anchor (uncomment and paste your LbCas12a sequence)
+  # id: "LbCas12a_anchor"
+  # seq: "PUT_YOUR_LbCas12a_ANCHOR_SEQUENCE_HERE"
+  # Option B (preferred if you already have files): pass via CLI
+  # --anchor_fasta lb_anchor.faa --anchor_id_substring LbCas12a
+  # Optional suffix-tail fast-path for designs that preserve the Lb tail exactly.
+  tail_check:
+    enabled: false
+    start: 514
+    end: 1228
+    mode: endswith   # (endswith|find)
+    require_all_motifs_in_range: true
+
+# If you pass --hmm, that HMM is used. Otherwise, provide --refs_fasta and the script will
+# MAFFT-align them and run hmmbuild to make an HMM. Ensure the references include the anchor.
+hmm:
+  # path: "lbcas12a.hmm"   # (optional) prebuilt HMM
+  build:
+    # refs_fasta: "cas12a_refs.faa"   # if building HMM, set via CLI --refs_fasta
+
+# Motifs (Lb numbering). You can edit these if your anchor is a different Lb variant.
+motifs:
+  WED:
+    H: 759
+    K1: 768
+    K2: 785
+    K_allowed: ["K", "R"]
+  PI:
+    K_positions: [538, 595]
+    require_exact_lys: false    # allow K/R
+  NUC:
+    routing_Arg: 1138
+  BH:
+    aromatic_pos: 890
+    allowed: ["W"]
+  # Optional LID (off unless you add positions you trust)
+  # LID:
+  #   basic_positions: [ /* e.g., 1013, 1016, ... in Lb numbering */ ]
+  #   min_basic: 3
+
+# Seeds: if a seed block is found in a query, any motif whose *query residue* falls in that block is masked.
+seeds:
+  enable_masking: false
+  search_in: "prefix"   # "prefix" or "any"
+  list:
+    - name: seed1
+      seq: "1MSKLEKFTNCYSLSKTLRFKAIPVGKTQENIDNKRLLVEDEKRAEDYKGVKKLLDRYYLSFINDVLHSIKLKNLNNYISLFRKKTRTEKENKELENLEINLRKEIAKAFKGNEGYKSLFKKDIIETILPEFLDDKDEIALVNSFNGFTTAFTGFFRNRENMFSEEAKSTSIAFRCINENLTRYISNMDIFEKVDAIFDKHEVQEIKEKILNSDYDVEDFFEGEFFNFVLTQEGIRVYNAIIGGFVTESGEKIKGLNEYINLYNQKTKQKLPKFKPLYKQVLSDRESLSFYGRGYTSDEEVLEVFRNTLNKNSEIFSSIKKLEKLFKNFDEYSSAGIFVKNGPAISTISKRIFGEWNVIRDKWNAEYDDIHLKKKAVVTEKYEDDRRKSFKKIGSFSLEQLQEYADADLSVVEKLKEIIIQKVDEIYKVYGSSEKLFDADFVLEKSLKKNDAVVAIMKDLLDSVKSFENYIKAFFGEGKETNRDESFYGDFVLAYDILLKVDHIYDAIRNYVTQ"
+    - name: seed2
+      seq: "2HKVSTQAYELWEKNSIAIKVKDLKEDEAKKFQGIAWLVKRAINYAGNADANKPLIANEQAEYNRSDYFIGDSNKVPSILFDVDTRGTISNRMQLMLSMLAMFSSYFAKDSQECLLARIDGQQYNIGYKNFLEKYASTLCVEEWDFVNNKKPNRFIRIRNGYSYLKWKKIYDADTRSFNKYDLAFEFLDEEPVYMIRDFSSIFKKSDAISTYKTKLLNVFGTSPDIKSTLWAPIYFIFGNQTSMSKFSEFKNTIQYGKLAGGTACPNSKKDVMYNLKDILMKEFKQYVQKEVKVRSNKFGSNLDELAIVADYKEVLECIKHVVQSIYGAKLEKINEISTWNQRAEFREKEKKDLLSHYDTKIRIGNFNNIIENLSYQEVINGKGDVVVIYLLNREGRAIGIVYPNDDHKLLVRVETNIKFINKPCKNIAIPIHLEYQDESFRKDKYVDYSLTTTKKPNDPNKNAIPSNAPHVVLEEKKLSARRMFLEAGGSLRIQGHNNEDFLLKFYMTHLNPTGHSKDSFDKNYIQFMYLKGEEVLKDVEKKSASEFSVKYGQEEVERYFGAIDKYKETESFNFDYANSWKPYRSISDKFFDILKHCDNLNFMDGKKFTGNKYIKQIDESPNYYAMWKKSFFVKPLMKNPGPLLKYNIKEYNGNVDDKDIKQLCKAYKKDMIALYYKSGYRLITARYDTEKDKDWGGMFQPNQFYLKFKDKSYPKQTVYNRIADYIHDVKLLIDYALVFDGYFSEDRNTEKGEGFFAKIYNEFSKVSDLLDKMIAVVADNKKLSKELVFDADFLKESSGYVKYIEDVKQIIIEKLKEVVSLDADAYEQLQELSFSGIKKFSKRRDDEYKETVVAKKKLHIDDYEANWKDRIVNWEGFIRKSITSIAPGNKVFIGASSYEDFNKFLKELKKISSFIESNKNLTNRFVELVEEDSTYGRGYFSLSERDSLVQKYLPKFKPLKQKTKQNYLNIYENLGKIKEGSETVFGGIIANYVRIGEQTLVFNFFEGEFFDEVDYDSNLIKEKIEQVEHKDFIADVKEFIDMNSIYRTLNENICRFAISTSKAEESFMNERNRFFGTFATTFGNFSNVLAIEDKDDLFEPLITEIIDKKFLSKYGENGKFAKAIEKRLNIELNELEKNEKETRTKKRFLSIYNNLNKLKISHLVDNIFSLYYRDLLKKVGKYDEARKEDEVLLRKNDINEQTKG"
+    - name: seed3
+      seq: "1MSKLEKFTNCYSLSKTLRFKAIPV"
+
+alignment:
+  # These don't affect HMMER; kept for future extension if you add a pairwise fallback.
+  gap_open: 10.0
+  gap_extend: 0.5

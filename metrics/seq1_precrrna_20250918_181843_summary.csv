@@ -1,0 +1,9 @@
+metric,value
+ptm,0.9000
+iptm,0.8900
+ranking_score,0.8900
+global_plddt,84.1945
+chain_A_avg_plddt,87.3550
+chain_A_median_plddt,90.9400
+chain_R_avg_plddt,57.9810
+chain_R_median_plddt,53.3300

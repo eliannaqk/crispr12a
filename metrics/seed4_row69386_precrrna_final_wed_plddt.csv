@@ -1,0 +1,5 @@
+domain,start,end,mean_plddt
+WED-I,1,25,88.36
+WED-II,514,582,88.32
+WED-III,679,808,92.17
+WED overall,,,90.52

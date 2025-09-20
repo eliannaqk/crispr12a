@@ -1,0 +1,14 @@
+metric,value
+total_sequences,39595.0
+suffix_length,1203.0
+min_prefix_length,5.0
+max_prefix_length,66.0
+median_prefix_length,25.0
+mean_prefix_length,24.881449677989647
+min_full_length,1208.0
+max_full_length,1269.0
+clusters_count,11435.0
+singleton_clusters,9669.0
+largest_cluster_size,6420.0
+cluster_median_size,1.0
+cluster_mean_size,3.4626147791867075

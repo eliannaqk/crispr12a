@@ -1,0 +1,8 @@
+metric,reference_value,higher_is_better,better_count,worse_count,equal_count,total_compared,note
+ipTM,0.7746531963348389,True,3,32,0,35,
+protein_pLDDT_mean,82.16506545919874,True,0,35,0,35,
+rna_pLDDT_mean,54.831875,True,9,26,0,35,
+complex_pde,0.6036337018013,False,0,35,0,35,
+complex_ipde,5.891396522521973,False,10,25,0,35,
+triad_min_distance_to_RNA_P,12.947557,False,33,2,0,35,
+triad_mean_distance_to_RNA_P,18.1364803314209,False,29,6,0,35,

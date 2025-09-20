@@ -1,0 +1,2 @@
+id,best_model_path,ipTM,protein_pLDDT_mean,rna_pLDDT_mean,wed_pLDDT_mean,wed_rna_contact_count,triad_annotation,triad_min_distance_to_RNA_P,triad_mean_distance_to_RNA_P,complex_pde,complex_ipde
+seq1_reference,filtering/boltz_scoring/boltz_runs/seq1_reference/boltz_results_yamls/predictions/seq1_reference/seq1_reference_model_0.cif,0.7746531963348389,82.16506545919874,54.831875,,,"1061,1064,502",12.947557,18.1364803314209,0.6036337018013,5.891396522521973

@@ -1,0 +1,34 @@
+reference:
+  id: "*"  # set to the exact header in your ref FASTA (e.g., LbCas12a_anchor)
+domains:
+  - name: "WED-I"
+    ref_start: 1
+    ref_end:   25
+  - name: "REC-I"
+    ref_start: 26
+    ref_end:   305
+  - name: "REC-II"
+    ref_start: 306
+    ref_end:   513
+  - name: "WED-II"
+    ref_start: 514
+    ref_end:   582
+  - name: "PI"
+    ref_start: 583
+    ref_end:   678
+  - name: "WED-III"
+    ref_start: 679
+    ref_end:   808
+  - name: "RUV-I/BH"
+    ref_start: 809
+    ref_end:   888
+  - name: "RuvC-II"
+    ref_start: 889
+    ref_end:   1010
+  - name: "NUC"
+    ref_start: 1011
+    ref_end:   1134
+  - name: "RuvC-III"
+    ref_start: 1135
+    ref_end:   1228
+

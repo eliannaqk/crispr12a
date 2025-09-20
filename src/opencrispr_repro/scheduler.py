@@ -1,0 +1,49 @@
+import warnings
+from typing import Union
+
+import textwrap
+from composer import State, Time
+from composer.optim.scheduler import (
+    ComposerScheduler,
+    LinearScheduler,
+    _convert_time,
+    _raise_if_max_duration_exceeds_t_max,
+    _raise_if_warmup_and_max_incompatible
+)
+
+class InvSqrtWithWarmupScheduler(ComposerScheduler):
+    def __init__(
+        self,
+        t_warmup: Union[str, Time],
+        t_max: Union[str, Time] = '1dur',
+        scale_warmup: bool = False,
+    ):
+        self.t_warmup = t_warmup
+        self.t_max = t_max
+        self.scale_warmup = scale_warmup
+        self.warmup_scheduler = LinearScheduler(alpha_i=0.0, alpha_f=1.0, t_max=t_warmup)
+
+    def __call__(self, state: State, ssr: float = 1.0):
+        assert state.max_duration is not None, 'max_duration should be set whenever schedulers are invoked'
+        t_warmup = _convert_time(self.t_warmup, state)
+        t_max = _convert_time(self.t_max, state, ssr=ssr)
+        _raise_if_warmup_and_max_incompatible(t_warmup, t_max)
+        _raise_if_max_duration_exceeds_t_max(t_max, state)
+        if t_warmup.value == 0:
+            warnings.warn(
+                textwrap.dedent(
+                    """\
+                The warmup duration is 0. If you specified warmup as a fraction of total
+                training duration, take note that the warmup duration is calculated in the
+                same unit as the trainer's max_duration parameter.""",
+                ),
+            )
+
+        if state.timestamp < t_warmup:
+            if self.scale_warmup:
+                return self.warmup_scheduler(state, ssr)
+            return self.warmup_scheduler(state)
+
+        current = state.timestamp.get(t_warmup.unit).value
+        warmup  = t_warmup.value
+        return (current / warmup) ** -0.5 if current > warmup else 1.0

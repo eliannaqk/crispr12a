@@ -5,3 +5,30 @@ __pycache__/
 slurm-*.out
 wandb/
 eval_outputs*/
+# Append; do NOT use '>' which overwrites
+cat >> .gitignore <<'EOF'
+# Python cruft
+__pycache__/
+*.py[cod]
+*$py.class
+
+# AF3 / heavy outputs
+alphafold3_work/jax_cache/
+alphafold3_work/input/databases/
+alphafold3_work/output*/
+alphafold3_work/output_h200*/
+alphafold3_work/output_h200_interactive/
+alphafold3_work/output_h200_protein_full/
+
+# Boltz / metrics-like large artifacts
+**/eval_outputs/
+**/checkpoints/
+*.npz
+*.npy
+*.pkl
+*.pt
+*.ckpt
+*.tar
+*.tar.gz
+*.zip
+EOF

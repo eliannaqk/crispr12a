@@ -1,0 +1,22 @@
+version: 1
+molecules:
+  - id: PROT
+    kind: protein
+    sequence: "MAGAGAGAGAGAGAGAGAKAAAAAGAGAGAGAGAGAGAGAKAAAAAGAGAGAGAGHAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAGAG"
+  - id: RNA
+    kind: rna
+    sequence: "AAUUUCUACUAAGUGUAGAUCGCAUCCAGUAAAGCGGCAC"
+complexes:
+  - id: PROT_RNA
+    members:
+      - PROT
+      - RNA
+options:
+  num_samples: 1
+  num_recycles: 1
+  use_msa_server: false
+  # Optional soft pocket constraint to encourage docking near WED:
+  # constraints:
+  #   pockets:
+  #     - chain: PROT
+  #       residues: []
