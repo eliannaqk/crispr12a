@@ -1,0 +1,45 @@
+#save_folder: /vast/palmer/scratch/ishizuka/eqk3/crisprData/Cas12a_cdhit/checkpoints
+save_folder: /home/eqk3/project_pi_mg269/eqk3/crisprData/atlas/model_saves_aug21/ 
+
+data:
+  sequence_col: sequence                # column in the CSV that holds the gRNA / protein sequence
+  # train_data_path: home/eqk3/project_pi_mg269/eqk3/crisprData/atlas/Cas12a_cdhit/train.csv
+  # val_data_path:   home/eqk3/project_pi_mg269/eqk3/crisprData/atlas/Cas12a_cdhit/valid.csv
+  # train_data_path: /home/eqk3/project_pi_mg269/eqk3/crisprData/newCrisprData/cas12a_expanded_cdhit99/train.csv
+  # val_data_path:   /home/eqk3/project_pi_mg269/eqk3/crisprData/newCrisprData/cas12a_expanded_cdhit99/valid.csv
+  # train_data_path: /home/eqk3/project_pi_mg269/eqk3/crisprData/atlas/newCas12a/final_data_training_aug20/csv2/train.csv
+  # val_data_path:   /home/eqk3/project_pi_mg269/eqk3/crisprData/atlas/newCas12a/final_data_training_aug20/csv2/valid.csv
+
+  train_data_path: /home/eqk3/project_pi_mg269/eqk3/crisprData/atlas/newCas12a/lbcasfiltering/train_40.csv
+  val_data_path: /home/eqk3/project_pi_mg269/eqk3/crisprData/atlas/newCas12a/lbcasfiltering/val_40.csv
+  #consider using csv2 folder traiing (15,000 instead of 30,000)
+  label_col: null                       # unsupervised LM fine‑tuning
+  batch_size: 10                       # sequences per GPU; this will result in a global batch size of 8
+  num_workers: 1
+  token_bucketed_batches: false
+  target_tokens_per_microbatch: 25000   # (with 25000, using around 95% of GPU memory in 1 H200)
+  bucket_size_multiplier: 25
+  random_reverse: true
+
+model:
+  name: progen2
+  path: /home/eqk3/project_pi_mg269/eqk3/crisprData/model/zenodo_15128064/
+
+training:
+  # Gradient accumulation simulated in YAML with GA = 8:
+  # - learning_rate := learning_rate / GA
+  # - warmup_steps := warmup_steps * GA
+  # - train_steps := train_steps * GA
+  # - save_interval_steps := save_interval_steps * GA
+  learning_rate: 5e-6   # = 1e-5 / 8
+  weight_decay: 0
+  warmup_steps: 1000      # = 500 * 8
+  train_steps: 800000     # = 100000 * 8 (total optimisation steps, not epochs)
+  total_lr_decay_factor: 0.2
+  gradient_clipping_threshold: 1.0
+
+# = 1000 * 8
+save_interval_steps: 1000
+# Evaluation cadence: once per epoch
+eval_interval: 1ep
+autoresume: false 

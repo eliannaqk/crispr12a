@@ -1,0 +1,24 @@
+save_folder: /gpfs/gibbs/pi/gerstein/crispr/Cas12a_nocdhit/checkpoints
+
+data:
+  sequence_col: sequence               # header you just created
+  train_data_path: /gpfs/gibbs/pi/gerstein/crispr/Cas12a_nocdhit/train.csv
+  val_data_path:   /gpfs/gibbs/pi/gerstein/crispr/Cas12a_nocdhit/valid.csv
+  batch_size: 2                         # drop if you hit GPU OOM
+  num_workers: 4
+
+model:
+  name: progen2
+  checkpoint: /gpfs/gibbs/pi/gerstein/crispr/models/zenodo_15128064/progen2-base-ft-crispr.ckpt
+  cfg_json:   /gpfs/gibbs/pi/gerstein/crispr/models/zenodo_15128064/progen2-base-ft-crispr-config.json
+  tokenizer_json: opencrispr_repro/tokenizer_progen2.json                          # triggers auto-download of ProGen-2 large
+
+training:
+  learning_rate: 5e-5
+  weight_decay: 1e-7
+  warmup_steps: 1000
+  train_steps: 60000                    # ≈3 epochs for 40 k sequences @ bs=2
+  total_lr_decay_factor: 0.2
+  gradient_clipping_threshold: 1.0
+
+save_interval_steps: 2000

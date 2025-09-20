@@ -1,0 +1,31 @@
+# Fine-tune crispr model on non-deduplicated Cas12a set
+model:
+  backbone: progen2
+  checkpoint: /gpfs/gibbs/pi/gerstein/crispr/models/zenodo_15128064/progen2-base-ft-crispr.ckpt
+  cfg_json:   /gpfs/gibbs/pi/gerstein/crispr/models/zenodo_15128064/progen2-base-ft-crispr-config.json
+  tokenizer_json: opencrispr_repro/tokenizer_progen2.json
+
+training:
+  epochs: 4
+  batch_size_tokens: 8192
+  lr: 5e-5
+  warmup_steps: 2000
+  weight_decay: 0.01
+  grad_clip_norm: 1.0
+  mixed_precision: bf16
+  save_every: epoch
+  log_every: 250
+  adapter:
+    type: lora
+    r: 16
+    alpha: 32
+    dropout: 0.1
+
+data:
+  manifest: /gpfs/gibbs/pi/gerstein/crispr/Cas12a_nocdhit/dataset.json
+  max_length: 2048
+
+system:
+  num_workers: 6
+  seed: 42
+  save_dir: /gpfs/gibbs/pi/gerstein/crispr/Cas12a_nocdhit/checkpoints

@@ -1,0 +1,15 @@
+- context:
+    name: "crispr12a"
+    seq: "1"
+
+  # target number of kept sequences after filtering
+  num_samples: 10000
+
+  # larger batch for faster generation on H200
+  batch_size: 32
+
+  do_sample: true
+  temperature: 0.9
+  top_p: 0.95
+  top_k: 0
+  repetition_penalty: 1.05

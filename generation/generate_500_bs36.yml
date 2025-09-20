@@ -1,0 +1,13 @@
+- context:
+    name: "crispr12a"
+    seq: "1MS"
+
+  num_samples: 500
+  batch_size: 8
+
+  do_sample: true
+  temperature: 0.9
+  top_p: 0.95
+  top_k: 0
+  repetition_penalty: 1.05
+

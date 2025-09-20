@@ -1,0 +1,23 @@
+# save as: configs/generate-test.yml
+- context:
+    name: "crispr12a"
+    # IMPORTANT: the training code wraps sequences with special boundary tokens "1" (start) and "2" (end).
+    # For generation, give a seed that starts with "1" (recommended). The script will set EOS to "2".
+    # Example seed: start token + a short motif/prefix (can be empty after '1').
+    #python generate.py \
+      # --model-path base \
+      # --config configs/generate-test.yml
+    seq: "1MS"  # or simply "1" if you want to let the model free-run
+
+  # target number of *kept* sequences after filtering
+  num_samples: 1000
+
+  # how many to generate per batch (per call)
+  batch_size: 10
+
+  # standard sampling knobs (passed through to model.generate)
+  do_sample: true
+  temperature: 0.9
+  top_p: 0.95
+  top_k: 0
+  repetition_penalty: 1.05

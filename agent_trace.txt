@@ -1,0 +1,1252 @@
+3866519 +++ exited with 127 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3866519, si_uid=21562, si_status=127, si_utime=0, si_stime=0} ---
+3866521 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 11
+3866521 connect(11, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+3866521 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 11
+3866521 connect(11, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+3866521 +++ exited with 0 +++
+3866520 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3866521, si_uid=21562, si_status=0, si_utime=0, si_stime=0} ---
+3866520 +++ exited with 0 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3866520, si_uid=21562, si_status=0, si_utime=0, si_stime=0} ---
+3866523 +++ exited with 0 +++
+3866522 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3866523, si_uid=21562, si_status=0, si_utime=0, si_stime=0} ---
+3866522 +++ exited with 0 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3866522, si_uid=21562, si_status=0, si_utime=0, si_stime=0} ---
+3866526 +++ exited with 0 +++
+3866525 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3866526, si_uid=21562, si_status=0, si_utime=0, si_stime=0} ---
+3866525 +++ exited with 0 +++
+3866524 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3866525, si_uid=21562, si_status=0, si_utime=0, si_stime=0} ---
+3866524 +++ exited with 0 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3866524, si_uid=21562, si_status=0, si_utime=0, si_stime=0} ---
+3866534 --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+3866539 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 25
+3866539 bind(25, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866539 getsockname(25, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866539 sendto(25, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681449, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866539 recvmsg(25, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866539 recvmsg(25, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866539 recvmsg(25, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866536 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 25
+3866536 connect(25, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+3866536 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 26
+3866536 bind(26, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866536 getsockname(26, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866536 sendto(26, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681449, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866536 recvmsg(26,  <unfinished ...>
+3866539 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 25
+3866536 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866539 connect(25, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+3866536 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866536 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866539 setsockopt(25, SOL_IP, IP_RECVERR, [1], 4 <unfinished ...>
+3866536 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP <unfinished ...>
+3866539 <... setsockopt resumed>)       = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16 <unfinished ...>
+3866536 <... socket resumed>)           = 26
+3866539 <... connect resumed>)          = 0
+3866536 setsockopt(26, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866539 sendto(25, "\3742\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16 <unfinished ...>
+3866539 <... sendto resumed>)           = 32
+3866536 <... connect resumed>)          = 0
+3866536 sendto(26, "\261\306\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866539 recvfrom(25, "\3742\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866536 recvfrom(26, "\261\306\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 25
+3866536 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP <unfinished ...>
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("100.24.136.199")}, 16 <unfinished ...>
+3866536 <... socket resumed>)           = 26
+3866539 <... connect resumed>)          = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.232.199.158")}, 16 <unfinished ...>
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(42573), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 <... connect resumed>)          = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 getsockname(26,  <unfinished ...>
+3866539 <... connect resumed>)          = 0
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(45542), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.232.199.158")}, 16 <unfinished ...>
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866539 <... connect resumed>)          = 0
+3866536 <... connect resumed>)          = 0
+3866539 getsockname(25,  <unfinished ...>
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("54.160.50.214")}, 16 <unfinished ...>
+3866539 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(37448), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 <... connect resumed>)          = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 getsockname(26,  <unfinished ...>
+3866539 <... connect resumed>)          = 0
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(56790), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.225.94.109")}, 16 <unfinished ...>
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866539 <... connect resumed>)          = 0
+3866536 <... connect resumed>)          = 0
+3866539 getsockname(25,  <unfinished ...>
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("100.24.136.199")}, 16 <unfinished ...>
+3866539 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(54165), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 <... connect resumed>)          = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 getsockname(26,  <unfinished ...>
+3866539 <... connect resumed>)          = 0
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(59634), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.23.91.225")}, 16 <unfinished ...>
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866539 <... connect resumed>)          = 0
+3866536 <... connect resumed>)          = 0
+3866539 getsockname(25,  <unfinished ...>
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.23.91.225")}, 16 <unfinished ...>
+3866539 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(55087), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 <... connect resumed>)          = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866536 getsockname(26,  <unfinished ...>
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.220.203.11")}, 16 <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(59881), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 <... connect resumed>)          = 0
+3866539 getsockname(25,  <unfinished ...>
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866539 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(58211), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 <... connect resumed>)          = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.225.94.109")}, 16 <unfinished ...>
+3866539 <... connect resumed>)          = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.55.142.155")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866539 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866539 getsockname(25,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(37408), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(49493), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866539 <... connect resumed>)          = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.55.142.155")}, 16 <unfinished ...>
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("54.235.148.115")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866539 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866539 getsockname(25,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(58983), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(46136), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866539 <... connect resumed>)          = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("54.160.50.214")}, 16 <unfinished ...>
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.220.203.11")}, 16 <unfinished ...>
+3866539 <... connect resumed>)          = 0
+3866539 getsockname(25,  <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866539 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(58693), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 getsockname(26, {sa_family=AF_INET, sin_port=htons(52357), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("54.235.148.115")}, 16) = 0
+3866536 getsockname(26, {sa_family=AF_INET, sin_port=htons(53714), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 26
+3866537 bind(26, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866537 getsockname(26, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866537 sendto(26, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681449, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP <unfinished ...>
+3866537 recvmsg(26,  <unfinished ...>
+3866518 <... socket resumed>)           = 27
+3866518 connect(27, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("100.24.136.199")}, 16 <unfinished ...>
+3866537 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866518 <... connect resumed>)          = -1 EINPROGRESS (Operation now in progress)
+3866537 recvmsg(26,  <unfinished ...>
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP <unfinished ...>
+3866537 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866518 <... socket resumed>)           = 28
+3866537 recvmsg(26,  <unfinished ...>
+3866518 connect(28, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("34.232.199.158")}, 16 <unfinished ...>
+3866537 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681449, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866518 <... connect resumed>)          = -1 EINPROGRESS (Operation now in progress)
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 26
+3866537 setsockopt(26, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866537 sendto(26, "\17\323\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866537 recvfrom(26, "\17\323\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 26
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("100.24.136.199")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(58076), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.232.199.158")}, 16) = 0
+3866537 getsockname(26,  <unfinished ...>
+3866518 getsockopt(27, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(53568), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 <... getsockopt resumed>[0], [4]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.225.94.109")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(35541), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.220.203.11")}, 16 <unfinished ...>
+3866518 getsockopt(28, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+3866537 <... connect resumed>)          = 0
+3866518 <... getsockopt resumed>[0], [4]) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(36030), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.23.91.225")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(37274), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.55.142.155")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(47519), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("54.235.148.115")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(39053), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("54.160.50.214")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(40013), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866518 connect(25, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("100.24.136.199")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 setsockopt(27, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(27, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(27, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(27, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 getsockopt(25, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 setsockopt(25, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866537 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 26
+3866537 bind(26, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866537 getsockname(26, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866537 sendto(26, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681452, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866537 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681452, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681452, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866537 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681452, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866537 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681452, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 26
+3866537 setsockopt(26, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866537 sendto(26, "\24~\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866537 recvfrom(26, "\24~\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 26
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(41013), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(49738), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(50523), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(36505), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(49345), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(53502), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(54832), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16) = 0
+3866537 getsockname(26, {sa_family=AF_INET, sin_port=htons(55647), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 26
+3866518 setsockopt(26, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 connect(26, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("52.3.55.230")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 getsockopt(26, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866539 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 25
+3866539 bind(25, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866539 getsockname(25,  <unfinished ...>
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0,  <unfinished ...>
+3866539 <... getsockname resumed>{sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866539 sendto(25, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681484, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+3866518 <... socketpair resumed>[26, 27]) = 0
+3866539 <... sendto resumed>)           = 20
+3866518 setsockopt(26, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866539 recvmsg(25,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866539 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(27, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866539 recvmsg(25,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866539 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866518 setsockopt(27, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866539 recvmsg(25,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866539 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [28, 29]) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [30, 31]) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866539 setsockopt(25, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866539 sendto(25, "\344\260\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866539 recvfrom(25, "\344\260\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 25
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(53234), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(33107), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(60862), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(39809), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(40923), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(54823), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(52400), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(33884), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866518 connect(25, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("3.233.183.50")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3867635 +++ exited with 128 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3867635, si_uid=21562, si_status=128, si_utime=0, si_stime=0} ---
+3866518 shutdown(30, SHUT_WR)           = 0
+3866518 shutdown(28, SHUT_WR)           = 0
+3866536 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 26
+3866536 bind(26, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866536 getsockname(26, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866536 sendto(26, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681484, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866536 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866536 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866518 getsockopt(25, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+3866536 recvmsg(26,  <unfinished ...>
+3866518 <... getsockopt resumed>[0], [4]) = 0
+3866536 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866537 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 26
+3866537 bind(26, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866537 getsockname(26, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866537 sendto(26, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681484, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866537 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866537 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866537 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681484, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866536 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 27
+3866536 setsockopt(27, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866536 connect(27, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866536 sendto(27, "\222\232\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 26
+3866537 setsockopt(26, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866537 connect(26, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866537 sendto(26, "K<\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866536 recvfrom(27, "\222\232\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866537 recvfrom(26, "K<\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866536 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP <unfinished ...>
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP <unfinished ...>
+3866536 <... socket resumed>)           = 26
+3866537 <... socket resumed>)           = 27
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866537 getsockname(27,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(51358), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(55060), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866537 getsockname(27,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(52356), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(43783), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866537 getsockname(27,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(57546), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(48313), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866537 getsockname(27,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(55333), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(39140), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866537 getsockname(27,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(54816), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(52232), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866537 getsockname(27,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(45663), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(37868), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866537 getsockname(27,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(42147), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(43362), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16 <unfinished ...>
+3866537 connect(27, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16 <unfinished ...>
+3866536 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866536 getsockname(26,  <unfinished ...>
+3866537 getsockname(27,  <unfinished ...>
+3866536 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(47389), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(50573), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 26
+3866518 connect(26, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("3.233.183.50")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 27
+3866518 setsockopt(27, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 connect(27, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("3.233.183.50")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 getsockopt(27, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(27, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 getsockopt(26, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866538 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 28
+3866538 bind(28, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866538 getsockname(28,  <unfinished ...>
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0,  <unfinished ...>
+3866538 <... getsockname resumed>{sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866518 <... socketpair resumed>[29, 30]) = 0
+3866538 sendto(28, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681486, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+3866518 setsockopt(29, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866538 <... sendto resumed>)           = 20
+3866518 setsockopt(29, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866538 recvmsg(28,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866538 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681486, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681486, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [32, 33]) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [31, 34]) = 0
+3866538 recvmsg(28,  <unfinished ...>
+3866518 setsockopt(31, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866538 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681486, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866518 <... setsockopt resumed>)       = 0
+3866538 recvmsg(28,  <unfinished ...>
+3866518 setsockopt(31, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866538 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681486, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(34, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(34, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866538 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 28
+3866538 setsockopt(28, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866538 connect(28, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866538 sendto(28, "\347\250\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866538 recvfrom(28, "\347\250\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866538 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 28
+3866538 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16) = 0
+3866538 getsockname(28, {sa_family=AF_INET, sin_port=htons(58713), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866538 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866538 getsockname(28, {sa_family=AF_INET, sin_port=htons(57388), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866538 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16) = 0
+3866538 getsockname(28, {sa_family=AF_INET, sin_port=htons(36444), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866538 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16) = 0
+3866538 getsockname(28, {sa_family=AF_INET, sin_port=htons(55724), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866538 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16) = 0
+3866538 getsockname(28, {sa_family=AF_INET, sin_port=htons(39345), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866538 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16) = 0
+3866538 getsockname(28, {sa_family=AF_INET, sin_port=htons(52301), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866538 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866538 getsockname(28, {sa_family=AF_INET, sin_port=htons(37744), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866538 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16) = 0
+3866538 getsockname(28, {sa_family=AF_INET, sin_port=htons(49439), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3867695 +++ exited with 128 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3867695, si_uid=21562, si_status=128, si_utime=0, si_stime=0} ---
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 28
+3866518 connect(28, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("52.206.199.74")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 shutdown(32, SHUT_WR)           = 0
+3866518 shutdown(31, SHUT_WR)           = 0
+3866518 getsockopt(28, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(25, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866537 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 29
+3866537 bind(29, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866537 getsockname(29, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866537 sendto(29, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681487, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866537 recvmsg(29, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681487, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681487, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866537 recvmsg(29, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681487, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866537 recvmsg(29, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681487, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 29
+3866537 setsockopt(29, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866537 sendto(29, "\215>\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866537 recvfrom(29, "\215>\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 29
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(60612), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(60916), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(54085), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(33577), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(52896), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(56103), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(33457), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(37511), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 29
+3866518 setsockopt(29, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 connect(29, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("52.206.199.74")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 getsockopt(29, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [25, 26]) = 0
+3866518 setsockopt(25, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(25, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [29, 30]) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [31, 32]) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3867840 +++ exited with 128 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3867840, si_uid=21562, si_status=128, si_utime=0, si_stime=0} ---
+3866518 shutdown(29, SHUT_WR)           = 0
+3866518 shutdown(31, SHUT_WR)           = 0
+3866539 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 25
+3866539 bind(25, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866539 getsockname(25, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866539 sendto(25, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681492, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866539 recvmsg(25, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681492, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681492, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866539 recvmsg(25, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681492, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866539 recvmsg(25, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681492, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866539 setsockopt(25, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866539 sendto(25, "\203\3\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866539 recvfrom(25, "\203\3\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 25
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(38701), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(53335), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(50998), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(42567), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(44646), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(47359), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(39008), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(35973), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866518 connect(25, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("52.3.55.230")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 getsockopt(25, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(25, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [26, 29]) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [30, 31]) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [32, 33]) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3867863 +++ exited with 128 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3867863, si_uid=21562, si_status=128, si_utime=0, si_stime=0} ---
+3866518 shutdown(30, SHUT_WR)           = 0
+3866518 shutdown(32, SHUT_WR)           = 0
+3866539 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 26
+3866539 bind(26, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866539 getsockname(26, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866539 sendto(26, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681495, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866539 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681495, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681495, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866539 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681495, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866539 recvmsg(26, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681495, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 26
+3866539 setsockopt(26, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866539 sendto(26, "\236e\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866539 recvfrom(26, "\236e\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 26
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(34788), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(56878), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(50727), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(50157), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(39318), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(53565), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(49332), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(39549), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 26
+3866518 setsockopt(26, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 connect(26, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("52.206.199.74")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 getsockopt(26, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866537 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 25
+3866537 bind(25, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866537 getsockname(25,  <unfinished ...>
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0,  <unfinished ...>
+3866537 <... getsockname resumed>{sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866518 <... socketpair resumed>[26, 28]) = 0
+3866537 sendto(25, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681501, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+3866518 setsockopt(26, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866537 <... sendto resumed>)           = 20
+3866518 <... setsockopt resumed>)       = 0
+3866537 recvmsg(25,  <unfinished ...>
+3866518 setsockopt(26, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866537 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681501, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681501, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866537 recvmsg(25,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866537 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681501, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866518 <... setsockopt resumed>)       = 0
+3866537 recvmsg(25,  <unfinished ...>
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0,  <unfinished ...>
+3866537 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681501, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866518 <... socketpair resumed>[29, 30]) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [31, 32]) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866537 setsockopt(25, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866537 connect(25, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866537 sendto(25, "H6\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866537 recvfrom(25, "H6\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 25
+3866537 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16) = 0
+3866537 getsockname(25, {sa_family=AF_INET, sin_port=htons(38738), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16) = 0
+3866537 getsockname(25, {sa_family=AF_INET, sin_port=htons(36017), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866537 getsockname(25, {sa_family=AF_INET, sin_port=htons(46879), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16) = 0
+3866537 getsockname(25, {sa_family=AF_INET, sin_port=htons(47688), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866537 getsockname(25, {sa_family=AF_INET, sin_port=htons(43643), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16) = 0
+3866537 getsockname(25, {sa_family=AF_INET, sin_port=htons(46317), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16) = 0
+3866537 getsockname(25, {sa_family=AF_INET, sin_port=htons(46138), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16) = 0
+3866537 getsockname(25, {sa_family=AF_INET, sin_port=htons(39066), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3868036 +++ exited with 128 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3868036, si_uid=21562, si_status=128, si_utime=0, si_stime=0} ---
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866518 connect(25, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("184.73.244.31")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 shutdown(29, SHUT_WR)           = 0
+3866518 shutdown(31, SHUT_WR)           = 0
+3866518 getsockopt(25, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866539 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 26
+3866539 bind(26, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866539 getsockname(26, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0,  <unfinished ...>
+3866539 sendto(26, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681503, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+3866518 <... socketpair resumed>[28, 29]) = 0
+3866539 <... sendto resumed>)           = 20
+3866518 setsockopt(28, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866539 recvmsg(26,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866539 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681503, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681503, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866518 <... setsockopt resumed>)       = 0
+3866539 recvmsg(26,  <unfinished ...>
+3866518 setsockopt(29, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866539 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681503, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866518 <... setsockopt resumed>)       = 0
+3866539 recvmsg(26,  <unfinished ...>
+3866518 setsockopt(29, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866539 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681503, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866518 <... setsockopt resumed>)       = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [30, 31]) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [32, 33]) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 26
+3866539 setsockopt(26, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866539 sendto(26, "\250e\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866539 recvfrom(26, "\250e\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 26
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(51611), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866518 setsockopt(25, SOL_SOCKET, SO_KEEPALIVE, [1], 4 <unfinished ...>
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16 <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866539 <... connect resumed>)          = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPIDLE, [1], 4 <unfinished ...>
+3866539 getsockname(26,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPINTVL, [1], 4 <unfinished ...>
+3866539 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(57904), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 <... setsockopt resumed>)       = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPCNT, [10], 4 <unfinished ...>
+3866539 <... connect resumed>)          = 0
+3866518 <... setsockopt resumed>)       = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(53988), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(36344), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(49972), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(48522), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(49095), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(26, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(26, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866539 getsockname(26, {sa_family=AF_INET, sin_port=htons(43920), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 26
+3866518 connect(26, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("3.226.192.127")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3868101 +++ exited with 128 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3868101, si_uid=21562, si_status=128, si_utime=0, si_stime=0} ---
+3866518 shutdown(32, SHUT_WR)           = 0
+3866518 shutdown(30, SHUT_WR)           = 0
+3866518 getsockopt(26, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866536 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 28
+3866536 bind(28, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866536 getsockname(28, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866536 sendto(28, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681504, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866536 recvmsg(28, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681504, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681504, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866536 recvmsg(28, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681504, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866536 recvmsg(28, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681504, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866536 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 28
+3866536 setsockopt(28, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866536 connect(28, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866536 sendto(28, "\247\200\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866536 recvfrom(28, "\247\200\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866536 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 28
+3866536 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.206.199.74")}, 16) = 0
+3866536 getsockname(28, {sa_family=AF_INET, sin_port=htons(47194), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866536 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.3.55.230")}, 16) = 0
+3866536 getsockname(28, {sa_family=AF_INET, sin_port=htons(44178), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866536 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.244.31")}, 16) = 0
+3866536 getsockname(28, {sa_family=AF_INET, sin_port=htons(50349), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866536 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.233.38.92")}, 16) = 0
+3866536 getsockname(28, {sa_family=AF_INET, sin_port=htons(54703), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866536 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("18.235.31.38")}, 16) = 0
+3866536 getsockname(28, {sa_family=AF_INET, sin_port=htons(49201), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866536 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866536 getsockname(28, {sa_family=AF_INET, sin_port=htons(53762), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866536 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866536 getsockname(28, {sa_family=AF_INET, sin_port=htons(57421), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866536 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866536 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.226.192.127")}, 16) = 0
+3866536 getsockname(28, {sa_family=AF_INET, sin_port=htons(57902), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 28
+3866518 setsockopt(28, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 connect(28, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("52.206.199.74")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 getsockopt(28, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 setsockopt(26, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(26, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [25, 28]) = 0
+3866518 setsockopt(25, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(25, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [29, 30]) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [31, 32]) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3868303 +++ exited with 128 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3868303, si_uid=21562, si_status=128, si_utime=0, si_stime=0} ---
+3866518 shutdown(29, SHUT_WR)           = 0
+3866518 shutdown(31, SHUT_WR)           = 0
+3866539 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 25
+3866539 bind(25, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866539 getsockname(25, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0,  <unfinished ...>
+3866539 sendto(25, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681510, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+3866518 <... socketpair resumed>[28, 29]) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866539 <... sendto resumed>)           = 20
+3866518 <... setsockopt resumed>)       = 0
+3866539 recvmsg(25,  <unfinished ...>
+3866518 setsockopt(28, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866539 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866518 setsockopt(29, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866539 recvmsg(25,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866539 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866518 <... setsockopt resumed>)       = 0
+3866539 recvmsg(25,  <unfinished ...>
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0,  <unfinished ...>
+3866539 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866518 <... socketpair resumed>[30, 31]) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(31, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [32, 33]) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866539 setsockopt(25, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866539 sendto(25, "\261\323\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866539 recvfrom(25, "\261\323\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866539 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 25
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.110.38")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(39384), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("107.22.163.235")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(34482), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3868316 +++ exited with 128 +++
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16 <unfinished ...>
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3868316, si_uid=21562, si_status=128, si_utime=0, si_stime=0} ---
+3866539 <... connect resumed>)          = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(60378), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.22.134.4")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(40169), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.236.43.221")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(52216), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.23.91.225")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(41385), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.212.37.92")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(38587), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866539 connect(25, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866539 connect(25, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866539 getsockname(25, {sa_family=AF_INET, sin_port=htons(42839), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 25
+3866518 connect(25, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("184.73.110.38")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 shutdown(30, SHUT_WR)           = 0
+3866518 shutdown(32, SHUT_WR)           = 0
+3866518 getsockopt(25, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866537 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 28
+3866537 bind(28, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866537 getsockname(28, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866537 sendto(28, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681510, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866537 recvmsg(28, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866537 recvmsg(28, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866537 recvmsg(28, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0, [29, 30]) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866538 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE <unfinished ...>
+3866518 setsockopt(29, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866538 <... socket resumed>)           = 28
+3866518 setsockopt(30, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866538 bind(28, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866538 <... bind resumed>)             = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866538 getsockname(28,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866538 <... getsockname resumed>{sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0,  <unfinished ...>
+3866538 sendto(28, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681510, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12 <unfinished ...>
+3866518 <... socketpair resumed>[32, 33]) = 0
+3866538 <... sendto resumed>)           = 20
+3866518 setsockopt(32, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866538 recvmsg(28,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(32, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866538 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_RCVBUF, [65536], 4 <unfinished ...>
+3866538 recvmsg(28,  <unfinished ...>
+3866518 <... setsockopt resumed>)       = 0
+3866518 setsockopt(33, SOL_SOCKET, SO_SNDBUF, [65536], 4 <unfinished ...>
+3866538 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866518 <... setsockopt resumed>)       = 0
+3866538 recvmsg(28,  <unfinished ...>
+3866518 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0,  <unfinished ...>
+3866538 <... recvmsg resumed>{msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681510, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866518 <... socketpair resumed>[34, 35]) = 0
+3866518 setsockopt(34, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(34, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866518 setsockopt(35, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0
+3866518 setsockopt(35, SOL_SOCKET, SO_SNDBUF, [65536], 4) = 0
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP <unfinished ...>
+3866538 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP <unfinished ...>
+3866537 <... socket resumed>)           = 28
+3866537 setsockopt(28, SOL_IP, IP_RECVERR, [1], 4 <unfinished ...>
+3866538 <... socket resumed>)           = 31
+3866537 <... setsockopt resumed>)       = 0
+3866538 setsockopt(31, SOL_IP, IP_RECVERR, [1], 4 <unfinished ...>
+3866537 connect(28, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16 <unfinished ...>
+3866538 <... setsockopt resumed>)       = 0
+3866537 <... connect resumed>)          = 0
+3866538 connect(31, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866537 sendto(28, "9\300\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+3866538 sendto(31, "t\352\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+3866537 <... sendto resumed>)           = 32
+3866538 <... sendto resumed>)           = 32
+3866537 recvfrom(28, "9\300\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866538 recvfrom(31,  <unfinished ...>
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP <unfinished ...>
+3866538 <... recvfrom resumed>"t\352\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866537 <... socket resumed>)           = 28
+3866537 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866538 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP <unfinished ...>
+3866537 getsockname(28,  <unfinished ...>
+3866538 <... socket resumed>)           = 30
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(59794), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(30, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.212.37.92")}, 16 <unfinished ...>
+3866537 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866538 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866538 getsockname(30,  <unfinished ...>
+3866537 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.23.91.225")}, 16 <unfinished ...>
+3866538 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(52740), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... connect resumed>)          = 0
+3866538 connect(30, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 getsockname(28,  <unfinished ...>
+3866538 <... connect resumed>)          = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(57314), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(30, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.22.134.4")}, 16 <unfinished ...>
+3866537 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866538 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866538 getsockname(30,  <unfinished ...>
+3866537 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.110.38")}, 16 <unfinished ...>
+3866538 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(51861), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... connect resumed>)          = 0
+3866538 connect(30, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 getsockname(28,  <unfinished ...>
+3866538 <... connect resumed>)          = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(39581), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(30, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("107.22.163.235")}, 16 <unfinished ...>
+3866537 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866538 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866538 getsockname(30,  <unfinished ...>
+3866537 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16 <unfinished ...>
+3866538 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(37094), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(30, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 <... connect resumed>)          = 0
+3866538 <... connect resumed>)          = 0
+3866537 getsockname(28,  <unfinished ...>
+3866538 connect(30, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(59255), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 getsockname(30,  <unfinished ...>
+3866537 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866538 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(33506), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... connect resumed>)          = 0
+3866538 connect(30, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.22.134.4")}, 16 <unfinished ...>
+3866538 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866538 connect(30, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.236.43.221")}, 16 <unfinished ...>
+3866537 getsockname(28,  <unfinished ...>
+3866538 <... connect resumed>)          = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(33552), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 getsockname(30,  <unfinished ...>
+3866537 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866538 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(42401), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 <... connect resumed>)          = 0
+3866538 connect(30, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("107.22.163.235")}, 16 <unfinished ...>
+3866538 <... connect resumed>)          = 0
+3866537 <... connect resumed>)          = 0
+3866538 connect(30, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16 <unfinished ...>
+3866537 getsockname(28,  <unfinished ...>
+3866538 <... connect resumed>)          = 0
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(41789), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 getsockname(30,  <unfinished ...>
+3866537 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866538 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(43767), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 connect(30, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 <... connect resumed>)          = 0
+3866538 <... connect resumed>)          = 0
+3866537 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.212.37.92")}, 16 <unfinished ...>
+3866538 connect(30, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.23.91.225")}, 16 <unfinished ...>
+3866537 <... connect resumed>)          = 0
+3866538 <... connect resumed>)          = 0
+3866537 getsockname(28,  <unfinished ...>
+3866538 getsockname(30,  <unfinished ...>
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(59042), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(58856), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(28, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866538 connect(30, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16 <unfinished ...>
+3866537 <... connect resumed>)          = 0
+3866538 <... connect resumed>)          = 0
+3866537 connect(28, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.236.43.221")}, 16 <unfinished ...>
+3866538 connect(30, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.110.38")}, 16 <unfinished ...>
+3866537 <... connect resumed>)          = 0
+3866538 <... connect resumed>)          = 0
+3866537 getsockname(28,  <unfinished ...>
+3866538 getsockname(30,  <unfinished ...>
+3866537 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(57759), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866538 <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(54254), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 28
+3866518 connect(28, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("44.220.102.113")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 30
+3866518 connect(30, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("3.212.37.92")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 getsockopt(28, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3868317 +++ exited with 128 +++
+3866518 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3868317, si_uid=21562, si_status=128, si_utime=0, si_stime=0} ---
+3866518 shutdown(34, SHUT_WR)           = 0
+3866518 shutdown(32, SHUT_WR)           = 0
+3866518 getsockopt(30, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(28, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(28, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 setsockopt(25, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(25, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 setsockopt(30, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(30, SOL_TCP, TCP_KEEPIDLE, [1], 4) = 0
+3866518 setsockopt(30, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(30, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866537 socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 29
+3866537 bind(29, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+3866537 getsockname(29, {sa_family=AF_NETLINK, nl_pid=3866518, nl_groups=00000000}, [12]) = 0
+3866537 sendto(29, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1754681512, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+3866537 recvmsg(29, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681512, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681512, nlmsg_pid=3866518}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("cluster")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.178.0.31")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.178.255.255")], [{nla_len=12, nla_type=IFA_LABEL}, "cluster"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1052, tstamp=1052}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+3866537 recvmsg(29, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681512, nlmsg_pid=3866518}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=807, tstamp=807}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 72
+3866537 recvmsg(29, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1754681512, nlmsg_pid=3866518}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 29
+3866537 setsockopt(29, SOL_IP, IP_RECVERR, [1], 4) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, 16) = 0
+3866537 sendto(29, "\237\31\1\0\0\1\0\0\0\0\0\0\4api2\6cursor\2sh\0\0\1\0\1", 32, MSG_NOSIGNAL, NULL, 0) = 32
+3866537 recvfrom(29, "\237\31\201\200\0\1\0\n\0\4\0\7\4api2\6cursor\2sh\0\0\1\0\1"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("172.18.190.12")}, [28 => 16]) = 494
+3866537 socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC, IPPROTO_IP) = 29
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.233.183.50")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(33921), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.22.134.4")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(40329), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("184.73.110.38")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(55700), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("3.212.37.92")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(42797), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("107.22.163.235")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(43883), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("34.236.43.221")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(39707), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("44.220.102.113")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(40440), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866537 connect(29, {sa_family=AF_UNSPEC, sa_data="\0\0\0\0\0\0\0\0\0\0\0\0\0\0"}, 16) = 0
+3866537 connect(29, {sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("52.23.91.225")}, 16) = 0
+3866537 getsockname(29, {sa_family=AF_INET, sin_port=htons(51701), sin_addr=inet_addr("10.178.0.31")}, [28 => 16]) = 0
+3866518 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 29
+3866518 setsockopt(29, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 connect(29, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("3.233.183.50")}, 16) = -1 EINPROGRESS (Operation now in progress)
+3866518 getsockopt(29, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+3866518 setsockopt(29, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPIDLE, [60], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPINTVL, [1], 4) = 0
+3866518 setsockopt(29, SOL_TCP, TCP_KEEPCNT, [10], 4) = 0
+3866518 --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+3866518 --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+3866530 --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+3866518 --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+3866518 --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+3866518 --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+3866530 --- SIGWINCH {si_signo=SIGWINCH, si_code=SI_KERNEL} ---
+3866518 --- SIGHUP {si_signo=SIGHUP, si_code=SI_USER, si_pid=3857132, si_uid=21562} ---
+3866518 --- SIGHUP {si_signo=SIGHUP, si_code=SI_USER, si_pid=3866518, si_uid=21562} ---
+3866539 +++ killed by SIGHUP +++
+3866538 +++ killed by SIGHUP +++
+3866537 +++ killed by SIGHUP +++
+3866536 +++ killed by SIGHUP +++
+3866535 +++ killed by SIGHUP +++
+3866534 +++ killed by SIGHUP +++
+3866533 +++ killed by SIGHUP +++
+3866532 +++ killed by SIGHUP +++
+3866531 +++ killed by SIGHUP +++
+3866530 +++ killed by SIGHUP +++
+3866518 +++ killed by SIGHUP +++
